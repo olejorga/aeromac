@@ -1,5 +1,5 @@
 from components.api import Api
-from components.provider import Vatsim
+from components.vatsim import Vatsim
 from components.service import Service
 
 
