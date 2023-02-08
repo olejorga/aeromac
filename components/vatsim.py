@@ -25,6 +25,11 @@ class Vatsim:
 
             flights.append(Flight(
                 callsign=flight["callsign"],
+                aircraft=plan["aircraft_short"] if plan else None,
+                longitude=flight["latitude"],
+                latitude=flight["longitude"],
+                altitude=flight["altitude"],
+                speed=flight["groundspeed"],
                 origin=plan["departure"] if plan else None,
                 destination=plan["arrival"] if plan else None
             ))
